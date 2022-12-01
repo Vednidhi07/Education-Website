@@ -1,0 +1,333 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-size: 12px;
+    font-family: "Poppins",sans-serif;
+}
+
+.wrapper {
+    max-width: 1134px;
+    margin: 0 auto;
+}
+
+/* button */
+
+
+.btn {
+    padding: 16px 32px;
+    border-radius: 24px;
+    color: white;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    position: relative;
+}
+
+.btn.dark {
+    background: #070917;
+}
+
+.btn.light {
+    background: #da722c;
+}
+.btn.login {
+    background: #da722c;
+    padding: 10px 60px;
+}
+
+a.forgot {
+    color: #070917;
+    font-size: 15px;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+/* header */
+
+header {
+    background: rgb(17, 124, 143);
+    height: auto;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 36px;
+}
+
+nav li {
+    list-style: none;
+}
+
+
+.logo {
+    font-family: "Raleway", sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+    color: #ffffff;
+    padding: 40px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+    margin: 0;
+}
+
+nav ul li a {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* menubar */
+
+.menubar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 36px;
+}
+
+.menubar ul {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    list-style: none;
+    margin: 0;
+}
+
+.menubar li {
+    list-style: none;
+}
+
+.menubar ul li a {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+section {
+    text-align: center;
+    min-width: 100vh;
+    min-height: auto;
+}
+
+section div.main {
+    display: flex;
+    margin: 30px;
+}
+
+section div h1 {
+    font-size: 40px;
+}
+
+section .intro {
+    display: flex;
+}
+
+div.main .left {
+    align-items: left;
+    width: 50%;
+}
+div.main .right {
+    align-items: right;
+    width: 50%;
+}
+
+div.main h1 {
+    color: #da722c;
+    font-size: 40px;
+    text-align: left;
+}
+
+div.main p {
+    color: #333;
+    font-size: 20px;
+    text-align: left;
+}
+
+/* Courses */
+
+.images-front {
+    display: flex;
+}
+
+.course-image {
+    width: 250px;
+    height: 250px;
+}
+
+.college-reviews {
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.videos-4 {
+    padding: 10px;
+}
+
+/* Study Materials */
+
+.course-image.notes {
+    width: 240px;
+    height: 250px;
+}
+
+
+/* footer */
+
+/* footer {
+    display: flex;
+    background-color: #333;
+    overflow: hidden;
+    }
+
+footer li{
+        list-style: none;
+    }
+    
+footer a {
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+    float: left;
+    color: white;
+    } */
+
+
+/* Login Page */
+
+div.wrapper form {
+    text-align: center;
+    padding: 100px;
+    max-width: 534px;
+    margin: 0 auto;
+}
+
+div.login p {
+    font-size: 13px;
+} 
+
+div.forgot1 {
+    padding: 10px;
+}
+
+div.forgot1 {
+    margin-bottom: 30px;
+}
+
+div.wrapper .login {
+    border: 1px solid #e3e3e3;
+    border-radius: 16px;
+    box-sizing: border-box;
+    font-family: Source Sans Pro;
+    margin: 5px;
+}
+
+div.wrapper .loginid {
+    padding: 05px;
+}
+
+div .loginid.text {
+    align-items: right;
+}
+
+/* Footer */
+
+footer {
+    background: #070917;
+    color: white;
+    margin-top: 100px;
+    padding: 70px 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer h3 {
+    color: #da722c;
+}
+
+footer ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+footer ul li {
+    margin: 16px 0;
+}
+
+footer ul .email {
+    margin: 20px;
+}
+
+footer .links-container {
+    display: grid;
+    grid-template-columns: 2fr 2fr 3fr;
+}
+
+footer .social {
+    margin-left: 20px;
+}
+
+footer .social a {
+    margin-right: 28px;
+}
+
+footer form {
+    margin-left: 20px;
+    margin-top: 16px;
+    position: relative;
+}
+
+
+footer form input {
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 200%;
+    border-radius: 8px;
+    padding: 8px 32px;
+    border: none;
+    width: 100%;
+    color: black;
+}
+
+
+footer form .submit-btn {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #da722c;
+    border-radius: 8px;
+    padding: 8px 32px;
+    border: none;
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+}
+
+
+footer .copyright {
+    margin-top: 36px;
+}
+
