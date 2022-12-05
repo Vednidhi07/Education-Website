@@ -75,6 +75,11 @@ nav li {
     padding: 40px;
 }
 
+.logo a {
+    color: white;
+    text-decoration: none;
+}
+
 nav ul {
     display: flex;
     align-items: center;
@@ -143,6 +148,12 @@ div.main .left {
     align-items: left;
     width: 50%;
 }
+
+div.main .left .credit {
+    text-align: right;
+    color: red;
+}
+
 div.main .right {
     align-items: right;
     width: 50%;
@@ -151,6 +162,7 @@ div.main .right {
 div.main h1 {
     color: #da722c;
     font-size: 40px;
+    font-family: "Raleway",sans-serif;
     text-align: left;
 }
 
@@ -188,30 +200,11 @@ div.main p {
 }
 
 
-/* footer */
-
-/* footer {
-    display: flex;
-    background-color: #333;
-    overflow: hidden;
-    }
-
-footer li{
-        list-style: none;
-    }
-    
-footer a {
-    text-decoration: none;
-    padding: 20px;
-    text-align: center;
-    float: left;
-    color: white;
-    } */
 
 
 /* Login Page */
 
-div.wrapper form {
+div.wrapper .login-form {
     text-align: center;
     padding: 100px;
     max-width: 534px;
@@ -246,16 +239,24 @@ div .loginid.text {
     align-items: right;
 }
 
+/* div .login.form {
+    background: skyblue;
+} */
+
 /* Footer */
 
 footer {
     background: #070917;
     color: white;
     margin-top: 100px;
-    padding: 70px 0;
+    padding: 50px 0;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
 }
 
 footer a {
+    font-family: "Raelwey", sans-serif;
+    font-weight: 900;
     text-decoration: none;
     color: white;
 }
@@ -290,7 +291,7 @@ footer .social a {
     margin-right: 28px;
 }
 
-footer form {
+footer .subscribe {
     margin-left: 20px;
     margin-top: 16px;
     position: relative;
@@ -326,8 +327,203 @@ footer form .submit-btn {
     cursor: pointer;
 }
 
+/* contact us page  */
 
-footer .copyright {
-    margin-top: 36px;
+div.wrapper .contact-form {
+    text-align: center;
+    padding: 100px;
+    max-width: 534px;
+    margin: 0 auto;
+    padding: 30px;
 }
 
+div.contact_us p {
+    font-size: 13px;
+} 
+
+div.wrapper .contact {
+    border: 1px solid #e3e3e3;
+    border-radius: 16px;
+    box-sizing: border-box;
+    font-family: Source Sans Pro;
+    margin: 5px;
+}
+
+div.wrapper .contact_us {
+    padding: 05px;
+}
+
+div .contact_text {
+    align-items: right;
+}
+
+/* study material page */
+
+.study-images-front {
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+}
+
+.Study_Materials_image {
+    width: 250px;
+    height: 250px;
+}
+
+.college-reviews {
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.videos-4 {
+    padding: 10px;
+}
+
+.study_1 {
+    border: 2px solid grey;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.Study_Materials {
+    margin-top: 50px;
+}
+
+.study_1 .section_1 {
+    display: flex;
+}
+
+.study_img {
+    border-radius: 10px;
+    text-align: left;
+    padding-right: 30px;
+}
+
+.enroll_now {
+    text-align: right;
+}
+
+.study_1 .section_1 .study_text {
+    display: grid;
+    grid-template-rows: 2;
+}
+
+.study_1 .study_text h1 {
+    color: #da722c;
+}
+
+.study_1 .study_text p {
+    font-size: 20px;
+    width: 300px;
+    border: 2px dashed grey;
+    background: rgb(240, 236, 236);
+    padding: 20px;
+}
+
+/* about page */
+
+.about_page {
+    max-width: 784px;
+    align-items: center;
+    border: 10px solid black;
+    margin: 50px;
+    border-radius: 40px;
+}
+
+.about_page_content p {
+    font-size: 20px;
+    font-family: "Poppins",sans-serif;
+}
+
+.about_page_content h4 {
+    font-size: 30px;
+    font-family: "Raleway",sans-serif;
+}
+
+.about_page_content h1 {
+    font-size: 40px;
+    font-family: "Raleway",sans-serif;
+    text-align: center;
+}
+
+.about_page_content h2 {
+    font-size: 35px;
+    font-family: "Raleway",sans-serif;
+    text-align: center;
+    color: red;
+    text-decoration: underline;
+}
+
+.about_page_content {
+    align-items: center;
+    margin: 5px;
+    border: 5px dashed #070917;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.About_img img {
+    width: 330px;
+    height: 250px;
+}
+
+/* notes */
+
+#subject {
+    width: 270px;
+    height: 50px;
+    font-size: 30px;
+    font-family: "Raleway",sans-serif;
+    font-weight: 900;
+    color: firebrick;
+}
+
+#chapter {
+    width: 270px;
+    height: 50px;
+    font-size: 30px;
+    font-family: "Raleway",sans-serif;
+    font-weight: 900;
+    color: firebrick;
+}
+
+#notes {
+    width: 270px;
+    height: 50px;
+    font-size: 30px;
+    font-family: "Raleway",sans-serif;
+    font-weight: 900;
+    color: firebrick;
+}
+
+.subject_notes {
+    margin: 30px 40px;
+}
+
+.notes_option {
+    display: flex;
+    text-align: center;
+}
+
+.study_1.notes-option {
+    background: rgb(223, 222, 222);
+    border: 2px solid #070917;
+
+}
+
+.study_1 .section_1 .notes_text {
+    display: grid;
+    grid-template-rows: 2;
+}
+
+.study_1 .notes_text h1 {
+    color: #090909;
+}
+
+.study_1 .notes_text p {
+    font-size: 20px;
+    width: 300px;
+    border: 2px dashed grey;
+    background: rgb(240, 236, 236);
+    padding: 20px;
+}

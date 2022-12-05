@@ -6,11 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EduCera.com</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Raleway:wght@300;900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -28,7 +29,7 @@
                             <a href="/Study Material.html">Courses</a>
                         </li>
                         <li>
-                            <a href="/Online_Class.html">Online Classes</a>
+                            <a href="#courselink">Online Classes</a>
                         </li>
                         <li>
                             <a href="#reviewlink">Notes</a>
@@ -44,35 +45,63 @@
             </nav>
         </div>
     </header>
-    <div class="wrapper">
-        <form action="/backend.php" method="post" class="login-form">
-            <div class="login">
-                <div>
-                    <h1 class="loginid text">Log In</h1>
-                </div>
-                <div>
-                    <p>
-                        Need an Account? <a href="/signup.html" class="forgot">Sign UP</a>
-                    </p>
-                </div>
-                <div class="loginid">
-                    <input type="name" name="username" id="username" placeholder="Username">
-                </div><br>
-                <div class="loginid">
-                    <input type="password" name="password" id="password" placeholder="Password">
-                </div><br>
-                <div>
-                    <a href="/index.html" class="btn login">Login</a><br>
-                </div>
-                <div class="forgot1">
-                    <a href="#" class="forgot">Forgot Password?</a>
+    <!-- header section ends here -->
+    <section class="Study_Materials">
+        <div class="wrapper">
+            <div class="study-images-front">
+                <div class="study_1 notes-option">
+                    <div class="section_1">
+                        <div class="notes_subject">
+                            <div class="notes_text">
+                                <h1>Find Notes From Here</h1>
+                            </div>
+                            <div class="notes_option">
+                                <div class="subject_notes">
+                                    <select name="Subject" id="subject">
+                                        <option value="maths">Select Subject</option>
+                                        <option value="maths" id="maths_option">Maths</option>
+                                        <option value="maths" id="program_option">Programming</option>
+                                        <option value="maths">Orientation</option>
+                                        <option value="maths" id="physics_option">Physics</option>
+                                        <option value="maths" id="chemistry_option">Python</option>
+                                    </select>
+                                </div>
+                                <div class="subject_notes">
+                                    <select name="chapter" id="chapter">
+                                        <option value="maths">Select Chapter</option>
+                                        <option value="maths">Chapter 1</option>
+                                        <option value="maths">Chapter 2</option>
+                                        <option value="maths">Chapter 3</option>
+                                        <option value="maths">Chapter 4</option>
+                                        <option value="maths">Chapter 5</option>
+                                        <option value="maths">Chapter 6</option>
+                                    </select>
+                                </div>
+                                <div class="subject_notes">
+                                    <select name="notes" id="notes">
+                                        <option value="maths">Select Notes</option>
+                                        <option value="maths">Note No. 1</option>
+                                        <option value="maths">Note No. 2</option>
+                                        <option value="maths">Note No. 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section_2">
+                        <div class="enroll_now">
+                            <a href="/login.html">
+                                <p class="btn dark">Download Now</p>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </form>
-    </div>
-
+        </div>
+        </div>
+    </section>
     <!-- body section ends here -->
-
     <footer>
         <div class="wrapper">
             <div class="links-container">
@@ -97,7 +126,7 @@
                     <h3>Course</h3>
                     <ul>
                         <li>
-                            <a href="/login.html">Login</a>
+                            <a href="#">Login</a>
                         </li>
                         <li>
                             <a href="#">Download</a>
@@ -131,7 +160,6 @@
             <p class="copyright">All Right Reserved Copyright ©EduCera.com</p>
         </div>
     </footer>
-
 </body>
 
 </html>
